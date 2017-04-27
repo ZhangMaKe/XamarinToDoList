@@ -15946,11 +15946,8 @@
       }
     },
     "dependencies": {
-      "Xamarin.Forms": "2.3.3.193",
-      "Microsoft.NETCore.UniversalWindowsPlatform": {
-        "target": "Package",
-        "version": "[5.1.0, )"
-      }
+      "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
+      "Xamarin.Forms": "2.3.3.193"
     },
     "frameworks": {
       "uap10.0": {}

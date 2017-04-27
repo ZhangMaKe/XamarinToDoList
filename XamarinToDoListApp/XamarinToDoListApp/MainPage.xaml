@@ -4,8 +4,11 @@
              xmlns:local="clr-namespace:XamarinToDoListApp"
              x:Class="XamarinToDoListApp.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+	<!--<Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+           HorizontalOptions="Center" />-->
+    <ListView x:Name="taskList">
+        
+    </ListView>
 
 </ContentPage>

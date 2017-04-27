@@ -12,6 +12,15 @@ namespace XamarinToDoListApp
 		public MainPage()
 		{
 			InitializeComponent();
+
+			var items = new string[]
+			{
+				"item 1",
+				"item 2",
+				"item 3"
+			};
+
+			this.taskList.ItemsSource = items;
 		}
 	}
 }
