@@ -7,16 +7,42 @@ using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
 
 using Xamarin.Forms;
+using XamarinToDoListApp.Database;
+using XamarinToDoListApp.Interfaces;
+using XamarinToDoListApp.Models;
 
 namespace XamarinToDoListApp
 {
 	public partial class App : Application
 	{
+		static ToDoItemDatabase database;
+
 		public App()
 		{
 			InitializeComponent();
 
 			MainPage = new XamarinToDoListApp.MainPage();
+
+			var item = new ToDoItem();
+			item.Task = "task 1";
+
+			Database.SaveItem(item);
+
+			var items = Database.GetItems();
+
+			string s = "";
+		}
+
+		public static ToDoItemDatabase Database
+		{
+			get
+			{
+				if (database == null)
+				{
+					database = new ToDoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db"));
+				}
+				return database;
+			}
 		}
 
 		protected override void OnStart()
