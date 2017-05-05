@@ -4,11 +4,23 @@
              xmlns:local="clr-namespace:XamarinToDoListApp"
              x:Class="XamarinToDoListApp.MainPage">
 
-	<!--<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />-->
     <ListView x:Name="taskList">
-        
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ViewCell.View>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50*" />
+                                <ColumnDefinition Width="50*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="{Binding Task}" />
+                            <Label Grid.Column="1" Text="{Binding DueDate}" />
+                        </Grid>
+                    </ViewCell.View>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
     </ListView>
 
 </ContentPage>

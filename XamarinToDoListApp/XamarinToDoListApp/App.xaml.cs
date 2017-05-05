@@ -23,14 +23,14 @@ namespace XamarinToDoListApp
 
 			MainPage = new XamarinToDoListApp.MainPage();
 
-			var item = new ToDoItem();
-			item.Task = "task 1";
+			//var item = new ToDoItem();
+			//item.Task = "task 1";
 
-			Database.SaveItem(item);
+			//Database.SaveItem(item);
 
-			var items = Database.GetItems();
+			//var items = Database.GetItems();
 
-			string s = "";
+			//string s = "";
 		}
 
 		public static ToDoItemDatabase Database
