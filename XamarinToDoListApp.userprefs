@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{5874E3D3-FFE2-4C9E-9801-2C6674056C52}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinToDoListApp/XamarinToDoListApp/packages.config">
+    <Files>
+      <File FileName=":Users:apple:myProjects:xamarin:XamarinToDoList:packages:Xamarin.Forms.2.3.3.193:build:portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20:Xamarin.Forms.targets" Line="57" Column="34" />
+      <File FileName="XamarinToDoListApp/XamarinToDoListApp/packages.config" Line="10" Column="12" />
+      <File FileName="XamarinToDoListApp/XamarinToDoListApp/App.xaml" Line="10" Column="15" />
+      <File FileName="XamarinToDoListApp/XamarinToDoListApp/MainPage.xaml" Line="14" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/apple/myProjects/xamarin/XamarinToDoList/packages/Xamarin.Forms.2.3.3.193/build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets" relfile="packages/Xamarin.Forms.2.3.3.193/build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets" line="62" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.XamarinToDoListApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EC5FA073-CD73-4611-8B01-E9CED6292A5A" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.XamarinToDoListApp.Android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+</Properties>
