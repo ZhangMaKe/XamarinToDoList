@@ -4,23 +4,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using XamarinToDoListApp.Database;
+using XamarinToDoListApp.Interfaces;
 
 namespace XamarinToDoListApp
 {
 	public partial class MainPage : ContentPage
 	{
-		public MainPage()
+        static ToDoItemDatabase database;
+        public static ToDoItemDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new ToDoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db"));
+                }
+                return database;
+            }
+        }
+        public MainPage()
 		{
 			InitializeComponent();
 
-			var items = new string[]
-			{
-				"item 1",
-				"item 2",
-				"item 3"
-			};
+            var items = Database.GetItems();
+            var itemNames = new List<string>();
 
-			this.taskList.ItemsSource = items;
+            foreach (var item in items)
+            {
+                itemNames.Add(item.Task);
+            }
+
+            taskList.ItemsSource = items;
 		}
 	}
 }
